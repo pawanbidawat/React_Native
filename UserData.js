@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text , StyleSheet} from 'react-native';
 export default UserData = (props) => {
     const item = props.data;
-    /* const item = props.item   */
+   
     return(
       <View style={styles.box}>
             <Text style={styles.item}>{item.name}</Text>
