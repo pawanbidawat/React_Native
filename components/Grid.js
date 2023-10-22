@@ -34,9 +34,8 @@ const Grid = () => {
       <Text style={{fontSize:30,textAlign:'center' , marginTop:60}}>Grid With map function and flex property</Text>
    
     <View style={{marginBottom:100, flex:1, flexDirection:'row',flexWrap:'wrap'}}>
-    
-      {
-        users.map((detail)=><Text style={[styles.item,styles.data]}>{detail.name}</Text>)
+    {
+        users.map((detail,i)=><Text style={[styles.item,styles.data]} key={i}>{detail.name}</Text>)
       }
       
       </View>
